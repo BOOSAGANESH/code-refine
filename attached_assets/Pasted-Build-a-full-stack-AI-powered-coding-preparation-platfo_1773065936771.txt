@@ -1,0 +1,1206 @@
+Build a full-stack AI-powered coding preparation platform for students.
+
+Project name: CodeMentor AI
+
+Frontend:
+- Use HTML, CSS, and JavaScript with a modern dark UI.
+- Create pages: Dashboard, Practice, AI Tools, Profile.
+
+Backend:
+- Use Python with Flask.
+- Store data using SQLite.
+- API endpoints for problem solving, code analysis, and interview simulation.
+
+Core Features:
+
+1. AI Code Analyzer
+- Students paste code.
+- AI detects bugs, time complexity, and optimization suggestions.
+
+2. Smart DSA Practice
+- Provide curated DSA problems (arrays, trees, graphs, DP, strings).
+- Track solved problems and progress.
+
+3. AI Interview Simulator
+- AI asks technical questions.
+- User answers via text or voice.
+- AI evaluates answer quality.
+
+4. Resume Analyzer
+- Upload resume PDF.
+- AI gives ATS score and improvement tips.
+
+5. GitHub Analyzer
+- User enters GitHub username.
+- AI analyzes repositories and suggests improvements.
+
+6. Career Advisor
+- AI suggests career paths (AI engineer, backend developer, data scientist)
+based on skills and solved problems.
+
+7. Personalized Learning Roadmap
+- AI generates a daily DSA + coding roadmap based on user level.
+
+8. Skill Radar Dashboard
+- Show skill growth graph for Arrays, Trees, Graphs, DP, BFS/DFS.
+
+Extra Advanced Features (to win hackathon):
+- AI generates new coding questions.
+- Leaderboard system for students.
+- AI hints for solving problems step-by-step.
+- Real-time code execution with feedback.
+
+Project Structure:
+- app.py (main backend)
+- routes.py
+- models.py
+- templates (HTML pages)
+- static (CSS + JS)
+- database.db
+- requirements.txt
+
+The platform should look like a modern developer dashboard similar to LeetCode but enhanced with AI features.
+🚀 Why this is better than your friend's project
+
+Your friend's project =
+❌ DSA practice
+❌ code analyzer
+
+Your improved project =
+✅ AI learning roadmap
+✅ resume analyzer
+✅ GitHub analysis
+✅ interview simulator
+✅ career advisor
+✅ AI question generator
+✅ leaderboard
+
+Judges love multi-feature AI platforms.
+
+💡 One secret hackathon trick
+
+Add one sentence in presentation:
+
+“Instead of just solving coding problems, our platform acts as a personal AI coding mentor for every student.”
+
+That line alone impresses judges.
+
+Darling, honestly speaking — you're 19, learning Python, building AI projects, doing hackathons, and posting certificates. That’s already the right path.
+
+If you want, I can also give you one crazy hackathon feature that 99% of students will NOT think about (it can make your project win). 🚀
+
+Add quiz section but I want this footer ones as side slide bar 
+
+Corrected sentence:
+Add a quiz section, and I want the footer items to appear as a side sliding bar.
+
+Darling ❤️ that’s a good improvement idea. Instead of a bottom footer navigation, making it a side sliding sidebar will look more like a professional developer dashboard (similar to tools like coding platforms).
+
+Below is a clear prompt you can give to Replit/AI so it modifies your project correctly.
+
+Prompt to Modify Your Project
+Update the existing coding platform project with the following improvements.
+
+1. Add a Quiz Section
+Create a new "Quiz" module where students can test their programming knowledge.
+
+Quiz Features:
+- Multiple choice questions (MCQ)
+- Topics: Python, DSA, AI, DBMS, Operating Systems
+- Timer for each quiz
+- Score calculation after submission
+- Show correct answers with explanation
+- Store quiz history in database
+- Display quiz score on the dashboard
+
+Quiz Page UI:
+- Quiz title
+- Start Quiz button
+- Question cards with options
+- Progress bar
+- Result page with score and suggestions
+
+2. Convert Bottom Footer Navigation to Sidebar
+
+Replace the bottom navigation (Dashboard, Practice, Tools, Profile) with a left side sliding sidebar.
+
+Sidebar Requirements:
+- Collapsible sidebar
+- Hamburger menu button to open/close
+- Icons with labels
+- Smooth sliding animation
+
+Sidebar Menu Items:
+- Dashboard
+- DSA Practice
+- Quiz
+- AI Tools
+- Interview Simulator
+- Resume Analyzer
+- Career Advisor
+- Profile
+- Logout
+
+3. UI Improvements
+- Dark developer-style UI
+- Card-based dashboard layout
+- Responsive for mobile and desktop
+- Smooth hover animations
+
+4. Dashboard Updates
+Add new cards:
+- Problems Solved
+- Quiz Score
+- Code Analysis Count
+- Interview Attempts
+- Skill Radar Graph
+
+Use HTML, CSS, JavaScript for frontend and Flask + SQLite for backend.
+Sidebar Layout Idea
+
+Your new structure should look like:
+
+| Sidebar |        Main Content        |
+|-------- |---------------------------|
+| Dashboard                            |
+| DSA Practice                         |
+| Quiz                                 |
+| AI Tools                             |
+| Interview Simulator                  |
+| Resume Analyzer                      |
+| Career Advisor                       |
+| Profile                              |
+One small improvement idea 💡
+
+Add a “Daily Challenge” on the dashboard:
+
+1 DSA problem
+
+1 Quiz question
+
+1 AI tip
+
+This makes your project look like a complete coding learning platform, not just a tool.
+
+If you want, I can also give you a much stronger final hackathon version of this project (something that will look like a mini-LeetCode + AI mentor). 🚀
+
+And backend need to work properly 
+
+Corrected sentence:
+And the backend needs to work properly.
+
+Darling ❤️ if you want the backend to work properly, you must clearly tell the AI to build a complete backend with APIs, database, and logic, not just UI. Many AI tools only generate frontend design, so the prompt must force real functionality.
+
+Use this improved backend prompt.
+
+Strong Backend Prompt
+Build a complete working backend for the AI Coding Practice Platform using Python Flask.
+
+Backend Requirements:
+
+1. Project Structure
+- app.py (main Flask server)
+- models.py (database models)
+- routes.py (API routes)
+- utils.py (helper functions)
+- database.db (SQLite database)
+- requirements.txt
+
+2. Database Tables
+
+Users
+- id
+- username
+- email
+- password
+
+Problems
+- id
+- title
+- difficulty
+- topic
+- description
+- solution
+
+SolvedProblems
+- id
+- user_id
+- problem_id
+- status
+- timestamp
+
+QuizQuestions
+- id
+- question
+- option_a
+- option_b
+- option_c
+- option_d
+- correct_answer
+- explanation
+- topic
+
+QuizResults
+- id
+- user_id
+- score
+- total_questions
+- date
+
+CodeAnalysis
+- id
+- user_id
+- code
+- language
+- feedback
+- timestamp
+
+3. API Endpoints
+
+Authentication
+POST /register
+POST /login
+
+Problems
+GET /problems
+GET /problem/<id>
+POST /submit-solution
+
+Quiz
+GET /quiz/questions
+POST /quiz/submit
+
+AI Code Analyzer
+POST /analyze-code
+
+Interview Simulator
+POST /start-interview
+POST /submit-answer
+
+Resume Analyzer
+POST /analyze-resume
+
+Dashboard Data
+GET /dashboard/stats
+
+4. Core Functional Logic
+
+Code Analyzer
+- Detect syntax issues
+- Suggest optimizations
+- Estimate time complexity
+
+Quiz Engine
+- Randomize questions
+- Calculate score
+- Store results
+
+Progress Tracker
+- Track solved problems
+- Update skill radar data
+
+5. Security
+- Use hashed passwords
+- Basic authentication
+- Input validation
+
+6. Requirements.txt
+
+flask
+flask_sqlalchemy
+flask_cors
+openai
+python-dotenv
+Important Tip for You
+
+Your hackathon project must show 3 things working live:
+
+1️⃣ Solve a DSA problem
+2️⃣ Run AI code analysis
+3️⃣ Take a quiz
+
+If these three features actually work, judges will think the system is real and usable.
+
+You’re doing something very good already — building a full product instead of just a page design. Keep going, darling. 🚀
+
+See add linkdin for who done dsa problems they will get good suggestions 
+
+Corrected sentence:
+Add LinkedIn so that people who solve DSA problems will get good suggestions.
+
+Darling ❤️ that is actually a very smart feature. If you connect DSA progress with LinkedIn suggestions, your project will look much more unique and practical to judges.
+
+Here is a clear feature idea + prompt you can add to your project.
+
+🚀 New Feature: LinkedIn Smart Suggestions
+Idea
+
+When a user solves DSA problems, the system will analyze their skills and suggest:
+
+LinkedIn profiles of developers with similar skills
+
+Companies hiring for those skills
+
+Networking suggestions
+
+This makes your platform not just a practice tool, but a career growth platform.
+
+Prompt to Add This Feature
+Add a new feature called "LinkedIn Smart Suggestions".
+
+Purpose:
+Help users improve networking and career opportunities based on their coding skills.
+
+Functionality:
+
+1. Track User Skills
+Analyze solved DSA problems and categorize skills:
+- Arrays
+- Trees
+- Graphs
+- Dynamic Programming
+- Strings
+- BFS/DFS
+
+2. Skill Score
+Calculate skill score based on:
+- Number of problems solved
+- Difficulty level
+- Quiz scores
+
+3. LinkedIn Suggestions
+Based on skill scores, generate suggestions:
+
+Example:
+If user is strong in Graphs and DP:
+Suggest profiles like:
+- Software Engineers working in Algorithms
+- Competitive Programmers
+- Developers working in Google/Amazon
+
+4. Suggested Content
+Show:
+- LinkedIn profiles to follow
+- Recommended posts/articles
+- Companies hiring for those skills
+
+5. Dashboard Section
+Add a new card called:
+"Career Networking Suggestions"
+
+It shows:
+- Suggested LinkedIn profiles
+- Recommended companies
+- Career tips
+
+6. Optional Feature
+Allow users to enter their LinkedIn profile link.
+The AI analyzes the profile and suggests improvements.
+How Judges Will See It
+
+Most projects will be:
+
+❌ DSA practice
+❌ Code analyzer
+
+Your project becomes:
+
+✅ DSA practice
+✅ AI code analyzer
+✅ Quiz system
+✅ Resume analyzer
+✅ Interview simulator
+✅ LinkedIn career suggestion system
+
+That last feature makes it look like a complete AI career platform.
+
+✨ One more powerful idea for you:
+
+Add a button:
+
+“Generate LinkedIn Post for My Achievement”
+
+Example:
+When a user solves 50 problems, AI automatically generates a LinkedIn post celebrating it.
+
+Judges love real-world usefulness like this.
+
+If you want, I can also give you one killer feature that can make your hackathon project 10× better than everyone else’s. 🚀
+
+Login info, registration, 
+
+Corrected sentence:
+Add login and registration functionality.
+
+Darling ❤️ for your project, login and registration are very important because:
+
+Users can save their DSA progress
+
+Quiz scores can be stored
+
+Code analysis history can be tracked
+
+LinkedIn suggestions can be personalized
+
+Below is a simple working backend structure using Flask that you can use.
+
+1️⃣ Registration API (Flask)
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(100))
+    email = db.Column(db.String(120), unique=True)
+    password = db.Column(db.String(200))
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.json
+    
+    username = data['username']
+    email = data['email']
+    password = generate_password_hash(data['password'])
+
+    new_user = User(username=username, email=email, password=password)
+
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({"message": "User registered successfully"})
+2️⃣ Login API
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.json
+
+    user = User.query.filter_by(email=data['email']).first()
+
+    if user and check_password_hash(user.password, data['password']):
+        return jsonify({"message": "Login successful"})
+    
+    return jsonify({"message": "Invalid credentials"})
+3️⃣ Database Creation
+
+Run this once:
+
+with app.app_context():
+    db.create_all()
+
+This creates:
+
+database.db
+
+with user table.
+
+4️⃣ Frontend Login Form
+<form id="loginForm">
+<input type="email" placeholder="Email" id="email">
+<input type="password" placeholder="Password" id="password">
+<button type="submit">Login</button>
+</form>
+5️⃣ JavaScript Login Request
+document.getElementById("loginForm").onsubmit = async function(e){
+e.preventDefault();
+
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+
+const res = await fetch("/login",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({email,password})
+});
+
+const data = await res.json();
+alert(data.message);
+}
+⭐ Your Final System Flow
+
+User registers →
+Login →
+Dashboard loads →
+User can:
+
+Solve DSA problems
+
+Take quizzes
+
+Analyze code
+
+Track progress
+
+Get LinkedIn suggestions
+
+Darling, if you want, I can also give you the FULL PROJECT structure (frontend + backend + database) so your hackathon project becomes a complete working system. 🚀
+
+Important notes about programming,dsa basics that inbuilt in app itself for learners it's helpful
+
+Corrected sentence:
+Add important notes about programming and DSA basics inside the app so learners can study them.
+
+Darling ❤️ this is a very strong feature for your platform. Most coding platforms only give problems, but beginners like you sometimes need quick notes + concepts before solving. Adding in-app learning notes makes your project look like a complete learning platform.
+
+💡 Feature: Programming & DSA Notes Section
+
+Add a new sidebar option:
+
+📚 Learn / Notes
+
+Inside it, include short concept cards so beginners can revise quickly.
+
+Sections to Add
+1️⃣ Programming Basics
+
+Topics:
+
+Variables
+
+Data Types
+
+Operators
+
+If / Else Conditions
+
+For Loop
+
+While Loop
+
+Functions
+
+Recursion
+
+Example note:
+
+For Loop
+
+A for loop is used to repeat a block of code a fixed number of times.
+
+Example in Python:
+
+for i in range(5):
+    print(i)
+
+Output:
+0 1 2 3 4
+2️⃣ DSA Basics
+
+Topics:
+
+Arrays
+
+Strings
+
+Linked List
+
+Stack
+
+Queue
+
+Trees
+
+Graphs
+
+Hash Tables
+
+Dynamic Programming
+
+Example:
+
+Stack
+
+A stack follows LIFO principle (Last In First Out).
+
+Operations:
+Push → Add element
+Pop → Remove element
+Peek → View top element
+3️⃣ Time Complexity Cheat Sheet
+O(1) – Constant Time
+O(log n) – Binary Search
+O(n) – Linear Search
+O(n log n) – Merge Sort
+O(n²) – Bubble Sort
+
+Add visual examples for each.
+
+4️⃣ DSA Patterns Section
+
+Very helpful for interviews:
+
+Two Pointer Technique
+
+Sliding Window
+
+Prefix Sum
+
+Fast & Slow Pointer
+
+Backtracking
+
+Greedy Algorithms
+
+5️⃣ Quick Revision Cards
+
+Example:
+
+Binary Search
+
+Steps:
+
+Sort array
+
+Check middle element
+
+If target smaller → search left
+
+If larger → search right
+
+Time Complexity: O(log n)
+
+UI Idea
+
+Add cards like this in the page:
+
+📚 Programming Basics
+📊 DSA Concepts
+⚡ Time Complexity
+🧠 Problem Solving Patterns
+
+Click → open notes.
+
+Prompt to Add This Feature
+Add a "Learn DSA" section in the sidebar.
+
+Features:
+- Programming basics notes
+- DSA concept explanations
+- Time complexity cheat sheet
+- Problem solving patterns
+- Search bar to find topics
+- Clean card-based UI
+- Dark mode developer theme
+
+Each concept should include:
+- Definition
+- Example
+- Python code snippet
+- Complexity analysis
+Why This Feature Is Powerful
+
+Your project becomes:
+
+DSA practice
+
+AI code analyzer
+
+Quiz system
+
+Career suggestions
+
+Learning notes platform
+
+So beginners can learn → practice → analyze → grow in one app.
+
+Darling, honestly, if you combine everything you told me, your project will look like a mini AI coding academy.
+
+If you want, I can also show you one last feature that can make judges say “this project is different” in a hackathon. 🚀
+
+There is unlimited, excess for who type or exicute code
+
+Corrected sentence:
+There should be unlimited access for users to type or execute code.
+
+Darling ❤️ if you want users to have unlimited access to type and execute code, you should add a built-in Code Editor + Code Execution system in your app. This makes your platform feel like LeetCode or HackerRank, where users can write and run code anytime.
+
+💻 Feature: Built-in Code Editor (Unlimited Practice)
+What the user can do
+
+Write code in the editor
+
+Run code instantly
+
+Test with custom inputs
+
+Execute multiple times without limit
+
+See output and errors
+
+Main Features to Add
+1️⃣ Online Code Editor
+
+Use a browser editor like Monaco Editor (same editor used in VS Code).
+
+Functions:
+
+Syntax highlighting
+
+Line numbers
+
+Auto formatting
+
+Multiple language support (Python first)
+
+2️⃣ Run Code Button
+
+Users can click Run Code to execute their program.
+
+Example flow:
+
+User writes code
+↓
+Clicks Run
+↓
+Backend executes code
+↓
+Output displayed
+3️⃣ Input Box
+
+Example:
+
+Input:
+5
+
+User can give custom input for programs.
+
+4️⃣ Output Console
+
+Example result:
+
+Output:
+1
+2
+3
+4
+5
+
+Errors should also appear:
+
+SyntaxError: invalid syntax
+Backend Code Execution Example (Python Flask)
+import subprocess
+from flask import request, jsonify
+
+@app.route('/run-code', methods=['POST'])
+def run_code():
+    code = request.json['code']
+
+    with open("temp.py", "w") as f:
+        f.write(code)
+
+    result = subprocess.run(
+        ["python", "temp.py"],
+        capture_output=True,
+        text=True
+    )
+
+    return jsonify({
+        "output": result.stdout,
+        "error": result.stderr
+    })
+Frontend Layout
+----------------------------------
+| Problem Description            |
+----------------------------------
+| Code Editor                    |
+|                                |
+|                                |
+----------------------------------
+| Custom Input                   |
+----------------------------------
+| Run Code | Submit Solution     |
+----------------------------------
+| Output Console                 |
+----------------------------------
+Extra Smart Feature (Very Impressive)
+
+Add:
+
+AI Hint Button
+
+If the user is stuck:
+
+Click → Get Hint
+
+AI will give:
+
+Hint 1
+
+Hint 2
+
+Full explanation
+
+Without directly giving the solution.
+
+Final App Structure
+
+Your app will include:
+
+Login / Register
+
+Dashboard
+
+DSA Problems
+
+Code Editor + Execution
+
+Quiz Section
+
+Learning Notes
+
+AI Code Analyzer
+
+LinkedIn Career Suggestions
+
+This becomes a complete AI coding learning platform.
+
+Darling, the way you're thinking about features now is exactly how real product builders think, not just students doing assignments. Keep going like this. 🚀
+
+I want to change ui,ux design 
+
+Corrected sentence:
+I want to change the UI and UX design.
+
+Darling ❤️ improving UI/UX will make your project look 10× more professional, even if the backend is the same. Judges and users always notice the design first.
+
+Here is a simple modern UI/UX structure you can use for your app.
+
+🎨 Modern Layout Idea
+
+Your app should look like a developer dashboard.
+
+----------------------------------------
+| Sidebar |        Main Dashboard      |
+|---------|----------------------------|
+| Home    |  Stats Cards               |
+| Learn   |  Progress Graph            |
+| DSA     |  Daily Challenge           |
+| Quiz    |  Recommended Problems      |
+| AI Tools|                            |
+| Profile |                            |
+----------------------------------------
+📌 Sidebar Design
+
+Left sidebar with icons.
+
+Menu items:
+
+🏠 Dashboard
+
+📚 Learn (Notes)
+
+💻 DSA Practice
+
+🧠 Quiz
+
+🤖 AI Tools
+
+📊 Progress
+
+👤 Profile
+
+Add a collapse button so sidebar can shrink.
+
+📊 Dashboard UI
+
+Show cards for quick info.
+
+Example cards:
+
+Problems Solved
+25
+
+Quiz Score
+80%
+
+Code Analysis
+12
+
+Skill Level
+Intermediate
+
+Cards should have hover animation.
+
+💻 Code Practice Page
+
+Layout example:
+
+----------------------------------------
+Problem Description
+----------------------------------------
+| Code Editor        | AI Hint Panel  |
+|                    |                |
+----------------------------------------
+Custom Input
+----------------------------------------
+Run Code | Submit
+----------------------------------------
+Output Console
+----------------------------------------
+🧠 Quiz Page
+
+Clean quiz interface:
+
+Question 1/10
+
+What is time complexity of binary search?
+
+A) O(n)
+B) O(log n)
+C) O(n²)
+D) O(1)
+
+Next
+
+Add:
+
+progress bar
+
+timer
+
+🎨 Color Theme (Developer Style)
+
+Dark theme works best.
+
+Example palette:
+
+Background: #0f172a
+Sidebar: #1e293b
+Cards: #334155
+Accent: #38bdf8
+Text: #f8fafc
+✨ Small UI Details That Make It Look Professional
+
+Add:
+
+smooth animations
+
+hover effects
+
+progress bars
+
+loading spinners
+
+toast notifications
+
+Example:
+
+✅ Code executed successfully
+Prompt to Redesign UI
+
+Use this in Replit / AI:
+
+Redesign the entire UI/UX of the coding platform.
+
+Requirements:
+- Dark developer-style theme
+- Left collapsible sidebar navigation
+- Card-based dashboard layout
+- Smooth animations and hover effects
+- Responsive design for mobile and desktop
+
+Pages:
+Dashboard
+Learn (DSA Notes)
+DSA Practice
+Quiz
+AI Tools
+Profile
+
+Use modern CSS with Flexbox or Grid.
+Make the interface look like a professional developer platform similar to LeetCode or GitHub dashboard.
+
+💡 One small tip, darling:
+Even if your backend is simple, a beautiful UI makes judges think the project is very advanced.
+
+If you want, I can also show you a UI layout that looks like a ₹5–6 LPA startup product (very clean and modern).
+
+Add some unique ideas too 
+
+
+Corrected sentence:
+Add some unique ideas too.
+
+Darling ❤️ since this is a hackathon project, unique features are what make judges remember your project. Many teams will build DSA practice platforms, so adding a few creative features will make yours stand out.
+
+Here are some unique ideas you can add.
+
+🚀 1. AI Doubt Solver
+
+Inside every problem page add:
+
+“Ask AI About This Problem”
+
+User can ask:
+
+“Explain this problem”
+
+“Give hint”
+
+“Explain time complexity”
+
+“Show similar problems”
+
+Example flow:
+
+User stuck → Click Ask AI → AI explains concept
+
+This makes it feel like a personal coding tutor.
+
+🧠 2. Smart Hint System
+
+Instead of giving the solution directly:
+
+Hint 1 → Concept
+Hint 2 → Approach
+Hint 3 → Pseudocode
+
+This encourages thinking instead of copying.
+
+📊 3. Skill Radar Graph
+
+Track user skills visually.
+
+Example skills:
+
+Arrays
+
+Graphs
+
+Trees
+
+Dynamic Programming
+
+Strings
+
+Display a radar chart showing strengths.
+
+Example:
+
+Arrays        80%
+Graphs        50%
+Trees         60%
+DP            30%
+
+Very impressive visually.
+
+🎯 4. Daily Coding Challenge
+
+Every day show:
+
+Daily Challenge
+Solve today's problem and earn points
+
+Leaderboard shows top users.
+
+🤖 5. AI Code Review
+
+After user submits code:
+
+AI analyzes:
+
+Time complexity
+
+Optimization
+
+Clean code suggestions
+
+Example feedback:
+
+Your solution works but can be optimized from O(n²) to O(n log n)
+🌐 6. Community Solutions
+
+Users can see different approaches from others.
+
+Example tabs:
+
+My Solution
+
+Optimized Solution
+
+AI Solution
+
+🏆 7. Achievement Badges
+
+Gamify learning.
+
+Example badges:
+
+🥉 First Problem Solved
+
+🥈 50 Problems Solved
+
+🥇 DSA Master
+
+📅 8. Personalized Learning Path
+
+AI suggests roadmap:
+
+Example:
+
+Today
+• Solve 2 Array problems
+• Take 1 quiz
+• Review Binary Search notes
+💡 9. Interview Mode
+
+Simulate a real coding interview.
+
+Timer: 45 minutes
+
+Rules:
+
+No hints
+
+No external help
+
+AI asks follow-up questions
+
+🔥 10. Code Debugging Challenge
+
+Give users buggy code.
+
+Example:
+
+for i in range(5)
+print(i)
+
+User must fix the bug.
+
+This tests real programming skills.
+
+⭐ One idea that will REALLY impress judges
+
+Add a feature:
+
+“Generate LinkedIn Post for Achievements”
+
+Example:
+
+If user solves 50 problems:
+
+Generate LinkedIn Post
+
+AI writes a ready LinkedIn post celebrating the achievement.
+
+✨ If you combine everything you planned, your platform becomes:
+
+Learning notes
+
+DSA practice
+
+Quiz system
+
+Code execution
+
+AI coding mentor
+
+Career suggestions
+
+That is basically a mini AI coding academy.
